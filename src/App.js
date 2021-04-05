@@ -1,19 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react';
 import Header from './Components/Header/Header';
 import Navbar from './Components/Navbar/Navbar';
-import CartWidget from './Components/CartWidget/CartWidget';
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
+import ItemCount from './Components/ItemCount/ItemCount';
 
-function App() {
+
+class App extends Component {
+    handleClick = () => {
+      alert('Se ha añadido a su carrito');
+    };
+  
+render() {
   return (
     
     <div className="">
       <Header title="ENTRENADOR PERSONAL CERTIFICADO" />
       <Navbar />
-      <ItemListContainer greetings="Bienvenidos a nuestra App!" />
+      <ItemListContainer 
+      greetings="Bienvenidos a nuestra App!" 
+      action= {this.handleClick}/>
     </div>
   );
 }
-
+}
 export default App;

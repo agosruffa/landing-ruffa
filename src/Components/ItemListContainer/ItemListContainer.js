@@ -1,10 +1,11 @@
 import './ItemListContainer.css';
+import ItemCount from '../ItemCount/ItemCount';
 
-function ItemListContainer(props) {
+function ItemListContainer({ greetings, action }) {
   return (
     <div className="principal">
-      <h2>{props.greetings}</h2>
-    
+      <h2>{greetings}</h2>
+      <ItemCount />
     </div>
   );
 };
