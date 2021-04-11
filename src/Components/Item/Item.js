@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Item.css'; 
-import { Segment } from 'semantic-ui-react'
+import { Header, Icon, Message, Segment } from 'semantic-ui-react';
 
 export const ciclosDeVida = [
     {
@@ -49,10 +49,8 @@ class Item extends Component {
             {this.state.ciclos_de_vida.map((data) => {
               return (
               <li className="detalles">              
-                <Segment.Group horizontal>
-                    <Segment>{data.name}</Segment>
-                    <Segment>{data.info} </Segment>
-                </Segment.Group>
+                <Header as='h5' attached='top'>{data.name}</Header>
+                <Segment attached>{data.info}</Segment>
               </li>
               );
             })}

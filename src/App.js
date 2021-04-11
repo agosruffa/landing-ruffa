@@ -20,7 +20,6 @@ render() {
     <div className="">
       <Header title="ENTRENADOR PERSONAL CERTIFICADO" />
       <Navbar />
-      <Item />
       <ItemListContainer 
       greetings="Bienvenidos a nuestra App!" 
       action= {this.handleClick}/>

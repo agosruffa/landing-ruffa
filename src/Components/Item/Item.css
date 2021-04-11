@@ -1,5 +1,6 @@
 .detalles{
-    text-align: center;
-    font-weight: bold;
     list-style: none;
+    color: black;
+    padding-right: 300px;
+    padding-left: 260px;
 }
