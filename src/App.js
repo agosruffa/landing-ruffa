@@ -6,8 +6,7 @@ import React, { Component } from 'react';
 import Header from './Components/Header/Header';
 import Navbar from './Components/Navbar/Navbar';
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
-import ItemCount from './Components/ItemCount/ItemCount';
-import Item from './Components/Item/Item';
+
 
 class App extends Component {
     handleClick = () => {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './ItemCount.css'
 import { Button, Card, Image } from 'semantic-ui-react';
+import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
 
 export default class ItemCount extends Component {
     constructor() {
@@ -29,6 +30,7 @@ return (
           <Card.Content>
             <Card.Header>Planificación semanal</Card.Header>
             <Card.Meta>$1000</Card.Meta>
+            <ItemDetailContainer />
             <h4>Item Count</h4>
             <p>{this.state.count}</p>
           </Card.Content>

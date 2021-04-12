@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Item.css'; 
-import { Header, Icon, Message, Segment } from 'semantic-ui-react';
+import { Header, Segment } from 'semantic-ui-react';
 
 export const ciclosDeVida = [
     {
